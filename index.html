@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Technical Document</title>
+    </head>
+<body>  
+    <nav id="navbar">
+        <header>HTML: Hypertext Markup Language</header>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
+        <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+        <li><a class="nav-link" href="#Anatomy_of_an_HTML_Document">Anatomy of an HTML Document</a></li>
+        <li><a class="nav-link" href="#HTML_Text_Fundamentals">HTML Text Fundamentals</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+                <ul>
+                    <li>HTML stands for Hypertext Markup Language</li>
+                    <li>It is the standard markup language for creating webpages</li>    
+                    <li>Describes the structure of a webpage</li>
+                    <li>HTML consists of a series of elements</li>
+                    <li>Those elements tell the browser how to display the content</li>
+                </ul>
+                    <p>HTML consists of elements, which you use to enclose, wrap, or mark up different 
+                 parts of content to make it appear or act in a certain way. 
+                 The enclosing tags can make content into a hyperlink
+                 to connect to another page, italicize words, and so on.</p>
+        </section>
+        <section class="main-section" id="HTML_Elements">
+            <header>HTML Elements</header>
+            <p>An HTML element is defined by a start tag and an end tag with content in between the two tags. For example:</p>
+                <code>< h1 >This is a Heading Tag< /h1></code>
+                <code>< p> This is a paragraph tag< /p>  </code><br>
+            <p>Elements can also be nested or placed in other elements. For example, if we wanted to emphizie a word we could use the strong tag. Like this: </p>
+                <code>< p>Today was < strong>VERY< /strong> hot. </ p>  </code>
+                <p>This example would produce: </p><br>
+                <p>Today was <strong>VERY</strong> hot. </p><br>
+                <p>Tags have to open and close in a way that they are inside or outside of one another. They cant overlap.</p>
+        </section>
+        <section class="main-section" id="Attributes">
+            <header>Attributes</header>
+            <p>All elements can also have attributes. Attributes contain information about the element that won't appear in the content.</p>
+            <code>< p class="main-section">This is a paragraph.</ p>  </code>
+            <p>An attribute should have a space between it and the element name, the attribute name followed by the equal sign and an attribute value wrapped with opening and closing quotation marks.</p>
+            <p>The href attribute of an a tag specifies the URL of the page the link goes to.
+                The src attribute of an img tag specifies the path to the image to be displayed.
+                The width and height attributes of an img tag provide size information for images.
+                The alt attribute of an img tag provides an alternate text for an image.
+                The style attribute is used to add styles to an element, such as color, font, size, and more.
+             </p>
+        </section>
+        <section class="main-section" id="Anatomy_of_an_HTML_Document">
+            <header>Anatomy of an HTML Document</header>
+            <p></p>
+            <code><! DOCTYPE html>
+                < html>
+                  < head>
+                    < meta charset="utf-8">
+                    < title>My test page < /title>
+                  </ head>
+                  < body>
+                    < p>This is my page < /p>
+                  < /body>
+                < /html></code>
+            <p>< !DOCTYPE html>: The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML.
+                More recently, the doctype is a historical artifact that needs to be included for everything else to work right.</p>
+            <p>The < html> element wraps all the content on the page. It is sometimes known as the root element.</p>
+            <p>The < head> element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more.</p>
+            <p>< meta charset="utf-8">: This element specifies the character set for your document to UTF-8, which includes most characters from the vast majority of human written languages. With this setting, the page can now handle any textual content it might contain. There is no reason not to set this, and it can help avoid some problems later.</p>
+            <p>The < title> element sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.</p>
+            <p>The < body> element contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.</p>
+        </section>
+        <section class="main-section" id="HTML_Text_Fundamentals">
+            <header>HTML Text Fundamentals</header>
+            <p>On of HTML's jobs is to structure content so that the browser can display it correctly. HTML uses headings, paragraphs, emphasizing words and lists to structure a page.</p>
+            <p>Structured content makes it easier to read a page.</p>
+            <p>There are 6 heading elements h1 to h6. h1 represents the main heading. h2 represents subheadings, h3 represents sub-subheadings and so on. Generally there should only be one h1 heading. Without headings, your page witll do poorly in SEO.</p>
+            <p>We need to make sure that we are using the correct elements, giving our content correct meaning, function and appearance.</p>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>Documentation on this page is taken from <a class="ref" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" >MDN</a> and <a class="ref" href="https://www.w3schools.com/html/default.asp" target="_blank" >W3Schools</a>.</p>
+        </section>
+    </main>
+</body>  
+</html>

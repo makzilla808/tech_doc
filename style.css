@@ -1,0 +1,78 @@
+@media screen and (max-width: 600px) {
+    #navbar {
+        display: none;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    border-right: solid;
+    height: 100%;
+    width: 295px;
+    color: black;
+}
+
+#navbar header {
+    text-align: center;
+    margin: 15px 10px;
+    font-size: 1.6em;
+}
+
+#navbar li {
+    border-top: solid 1px;
+    list-style-type: none;
+    padding: 10px 15px;
+}
+
+#navbar a:link {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+#navbar a:visited {
+    color: gray;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+
+#main-doc header {
+    font-size: 1.8em;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+#main-doc li {
+    line-height: 1.8em;
+}
+
+#main-doc p {
+    margin: 10px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 50%;
+  }
+
+  .ref {
+      color: black;
+  }
